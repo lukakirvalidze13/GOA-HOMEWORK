@@ -1,0 +1,14 @@
+.main{
+    color: green;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid red;
+}
+
+.secondary{
+    color: blue;
+}
+
+div{
+    color: orange;
+}

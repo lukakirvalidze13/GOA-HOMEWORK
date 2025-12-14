@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .login{
+            font-weight: 900;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            gap: 5px;
+            background-color: black;
+            color: white;
+            border: 1px outset black;
+            border-radius: 9px;
+            padding: 15px;
+            padding: 10px;
+            
+        }
+        .login input{
+            background-color: white;
+            color: black;
+            width: fit-content;
+            
+        }
+        .login .submit{
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            width: fit-content;
+        }
+        .submit:hover{
+            cursor:crosshair;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <form class="login">
+        <label for="first">First name :</label>
+        <input type="text" id="first" name="first">
+        <label for="last">Last name :</label>
+        <input type="text" name="last" id="last">
+        <label for="date">Date of birth :</label>
+        <input type="date" name="date" id="date">
+        <label for="email">Email id :</label>
+        <input type="email" name="email" id="email">
+        <label for="num">Mobile number :</label>
+        <input type="number" name="num" id="num">
+        <br><br>
+        <input class="submit" type="submit" value="SUBMIT">
+        <input class="submit" type="reset" value="RESET">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        ul li{
+            float:left;
+        }
+        li a{
+            display: block;
+            color: red;
+            text-align: center;
+            padding:15px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: green;
+            cursor: grab;
+        }
+        ol{
+            margin: 0;
+        }
+        ol li{
+            padding: 5px;
+            width: fit-content;
+        }
+        ol li:hover{
+            background-color: black;
+            color:white;
+            display: inline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<!-- order - დალაგებული
+unorder - დაულაგებელი
+contain - მოიცავს
+item - ნივთი
+attribute - ატრიუბტი
+optional  - არჩევითი
+required - საჭირო  -->
+<!-- 
+<ol>
+    <li>Ordered</li>
+    <li>List</li>
+    <li>.</li>
+</ol>
+
+<ul style="list-style-type:square;">
+    <li>unordered list</li>
+    <li>Li nested inside ul</li>
+</ul>
+
+<ul style="list-style-type: circle;">
+    <li>Li nested in Ul</li>
+</ul>
+
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>-Hot</dd>
+</dl> -->
+
+
+<!-- navigation with listed -->
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#generator">Generator</a></li>
+
+</ul>
+
+<ol type="1" start="69">
+    <li>Milk</li>
+    <li>Cookies</li>
+    <li>Ice-cream</li>
+</ol>   
+
+    
+</body>
+</html>

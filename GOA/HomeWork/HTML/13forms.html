@@ -1,0 +1,85 @@
+<!-- 
+shape - ფორმა
+navigation - ნავიგაცია
+multiple - მრავალი
+single  - ერთი
+impact - გავლენა
+set - კომპლექტი
+extension - გაფართოება
+mark - მონიშვნა
+unique - უნიკალური, განუმეორებელი
+target - სამიზნე
+checkbox - მოსანიშნი ყუთი
+targets - უმიზნებს, მიუთითებს
+id - უნიკალური ნომერი
+for - ამისთვის (რაღაცისთვის)
+hit area - მონიშვნის ფართობი
+top - ზევით
+label - ეტიკეტი
+form - კითხვარი, ინფორმაციის შესავსები ანკეტა -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .accept{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="">Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+        <br><br>
+        <label for="">Password</label><br>
+        <input type="password" required>
+        <input type="color"><br><br>
+        <input type="datetime-local"><br><br>
+        <input type="submit"><br><br>
+        <input type="file"><br><br>
+        <input type="image" src="https://www.bmw-georgia.com/content/dam/bmw/common/all-models/x-series/x5/2021/highlights/bmw-x5-onepager-sp-desktop.jpg" width="200px"><br><br>
+        <input type="number"><br><br>
+        <input type="range"><br><br>
+        <input type="reset"><br><br>
+        <input type="url" placeholder="google.com"><br><br>
+        <input type="search" placeholder="X5">
+        <input type="tel" pattern="[0-9]{3} - [0-9]{3}-[0-9]{4}">
+        <!-- pattern = 3 digits and then - three digits and then - 4 digits
+             example : 300-540-5500 -->
+    </form>
+    
+
+    <h1>Registration</h1>
+    <form>
+        <label for="">First name</label>
+        <input type="text"><br><br>
+        <label for="">Last name</label>
+        <input type="text"><br><br>
+        <label for="Email">email</label>
+        <input type="email" name="Email" value="@gmail.com" placeholder="example">
+        <h2>Gender</h2>
+        <label for="gender">male</label>
+        <input name="gender" id="male" type="radio">
+        <label for="gender">female</label>
+        <input name="gender" id="female" type="radio">
+        <br><br>
+        <label for="">Date of birth</label>
+        <input type="date">
+        <br>
+        <input type="checkbox" required>
+        <label for="">Agree to <span class="accept"><a href="">terms & conditions</a></span> and <span class="accept"><a href="">privacy policy.</a></span></label>
+        <br>
+        <input type="submit">
+    </form>
+
+
+</body>
+</html>

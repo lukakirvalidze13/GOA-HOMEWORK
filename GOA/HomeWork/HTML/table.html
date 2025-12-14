@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<style>
+    table {
+        width: 100%;
+        border: 5px solid red;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 25%;
+        background: turquoise;
+    }
+    .top {
+        background: darkblue;
+        color: white;
+        width: 90%;
+    }
+
+    .green { background: lightgreen; }
+    .pink { background: pink; }
+    .yellow { background: yellow; }
+
+    img {
+        width: 140px;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td rowspan="2" class="left">
+            <h3>გილოცავთ გიორგობას</h3>
+        </td>
+        <td colspan="3" class="top">
+            კეთილი იყოს თქვენი მობრძანება ჩემს ვებგვერდზე
+        </td>
+        <td rowspan="2" class="right">
+            <img src="https://karibche.ge/images/stories/article/2010/23_noemberi/--_eb45d.jpg" alt="image">
+        </td>
+    </tr>
+    <tr class="bottom">
+        <td class="green">მწვანე</td>
+        <td class="pink">ვარდისფერი</td>
+        <td class="yellow">
+            <a href="https://ibsu.edu.ge/en/" target="_blank">შავი ზღვის უნივერსიტეტი</a>
+        </td>
+    </tr>
+</table>
+
+
+<label>შეიყვანეთ დაბადების თარიღი მინიმუმ 2006-01-01:</label> <br>
+<input type="date">
+<br><br>
+
+<label>რომელ ბრაუზერს იყენებთ</label>
+<br>
+<select>
+<option value="">Opera GX</option>
+<option value="">Opera GX</option>
+<option value="">Opera GX</option>
+</select>
+
+
+
+</body>
+</html>
