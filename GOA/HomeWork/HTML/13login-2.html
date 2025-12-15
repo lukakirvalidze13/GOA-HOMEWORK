@@ -5,14 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form login</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(0, 183, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form{
+            background-color: rgba(0, 255, 8, 0.55);
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 9px;
+            font-weight: 900;
+            font-size: 15px;
+        }
+        h1{
+            color: white;
+        }
+        div{
+            color: black;
+        }
+        div input{
+            background-color: black;
+            color: yellow;
+            border-radius:9px;
+        }
+        div option, select{
+            background-color: black;
+            color:yellow;
+            border-radius:9px;
+
+        }
+
 
     </style>
 </head>
 <body>
-    <h1>Form Log-In</h1>
+    <!-- <h1>Form Log-In</h1>
     <form>
-        
-    </form>
+        <label for="first">First name :</label>
+        <input type="text" name="first" id="first"><br><br>
+        <label for="last">Last name :</label>
+        <input type="text" name="last" id="last"><br><br>
+        <label for="date">Date of birth :</label>
+        <input type="date" name="date" id="date"><br><br>
+        <label for="email">Email id :</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="mobile">Mobile Number :</label>
+        <input type="number" name="mobile" id="mobile"><br><br>
+        <br>
+        <input type="submit" value="SUBMIT">
+        <input type="reset"  value="Reset">
+    </form> -->
     
+    <form action="results.html" method="post">
+        <h1>Log-In</h1>
+        <div>
+            <label for="">Full name </label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <label for="mail">Email </label>
+            <input type="email" required>
+        </div>
+
+        <div>
+            <label for="age">age </label>
+            <input type="number" required min="18" max="99" id="age" name="age">
+        </div>
+
+        <div>
+            <label for="city">City </label>
+            <select>
+                <option value="Georgia">Georgia</option>
+                <option value="Spain">Spain</option>
+                <option value="United kingdom" selected>United kingdom</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="sex">male </label>
+            <input type="radio" id="sex" name="sex" required>
+            <label for="sex2">female</label>
+            <input type="radio" id="sex2" name="sex" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" required>
+        </div>
+    </form>
+
+
 </body>
 </html>
