@@ -69,20 +69,26 @@
     <form action="results.html" method="post">
         <h1>Log-In</h1>
         <div>
+            <input type="search" placeholder="search anything">
+        </div>
+        <div>
             <label for="">Full name </label>
-            <input type="text" required>
+            <input type="text"  required>
         </div>
 
         <div>
             <label for="mail">Email </label>
-            <input type="email" required>
+            <input type="email" readonly required>
         </div>
 
         <div>
             <label for="age">age </label>
             <input type="number" required min="18" max="99" id="age" name="age">
         </div>
-
+        <div>
+            <label for="tel">Number</label>
+            <input type="tel" >
+        </div>
         <div>
             <label for="city">City </label>
             <select>
